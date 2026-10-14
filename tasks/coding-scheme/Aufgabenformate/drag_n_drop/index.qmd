@@ -3,7 +3,7 @@ lang: de
 title: "Drag & Drop"
 ---
 
-Wählen Sie auf dieser Seite aus, für welche Art von Drag & Drop Aufgabe Sie ein Kodierschema anlegen möchten.
+Wählen Sie auf dieser Seite aus, für welche Art von Drag & Drop Aufgabe Sie das Kodierschema anlegen möchten.
 
 ## Sortieren
 
