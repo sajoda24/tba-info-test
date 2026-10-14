@@ -1,0 +1,42 @@
+---
+lang: de
+title: "Complex Multiple Choice (CMC)"
+---
+
+## Umbenennung des Interaktionselements „Optionenfeld“
+Prüfen Sie zunächst, ob für das CMC-Element (Optionsfeld) alle IDs umbenannt wurden. Die Umbenennung für CMC-Elemente wird [hier](IDs im Studio umbenennen – Optionentabelle (CMC)) erklärt.
+
+
+## Kodierschema der Basisvariablen
+1. Kodierschema generieren:
+Im ersten Schritt geben Sie für jede Basisvariable (Zeile der CMC-Tabelle) die richtige Antwortoption an. Wählen Sie dazu eine Basisvariable aus und nutzen Sie das Zauberstab-Symbol, um dort die richtige Antwortoption für die entsprechende Zeile anzugeben. Klicken Sie auf „Generiere Kodierung“. 
+
+2. Wiederholen Sie den Schritt mit jeder Basisvariable der CMC-Tabelle. 
+
+
+## Kodierschema der abgeleiteten Variable erstellen
+Mit der abgeleiteten Variable wird geprüft, ob die Summe der Bewertungen über alle Zeilen der Tabelle mit dem eingetragenen Wert übereinstimmt. Anders gesagt vergibt die abgeleitete Variable eine Bewertung mit einem Punkt, wenn alle Zeilen der Tabelle richtig beantwortet wurden. Andernfalls wird die CMC-Tabelle mit 0 Punkten bewertet.
+
+1. [Erstellen Sie die abgeleitete Variable]():
+Wählen Sie für die abgeleitete Variable alle Zeilen der CMC-Tabelle als Quellvariablen aus, und wählen Sie als Ableitungsmethode „Bewertungen summieren“. Die Variable erhält die übergeordnete ID zu den Zeilen der Tabelle (d.h. ID `03`, falls die Zeilen nach dem Schema `03a`, `03b`, … benannt sind).
+
+2. Kodierschema generieren: 
+Gehen Sie auf das Zauberstab-Symbol und tragen dort unter „Übereinstimmung:“ die Anzahl an Zeilen ein. Klicken Sie auf „Generiere Kodierung“.
+
+
+Das erstellte Kodierschema sollte ungefähr so aussehen:
+
+::: {.panel-tabset}
+
+## Basisvariablen
+
+Kodierung jeder Basisvariable
+![](assets/cmc_code_basis.png)
+
+## Abgeleitete Variable
+
+Kodierung der abgeleiteten Variable
+![](assets/cmc_code_ableitung.png) 
+
+:::
+
